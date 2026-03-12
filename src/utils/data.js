@@ -43,7 +43,7 @@ export const PROJECTS = [
     github: 'https://github.com/zak2k3/trade-journal-app',
     demo: 'https://trade-journal-app-blue.vercel.app',
     color: '#00f5ff',
-    icon: '📈',
+    icon: <BarChart size={24} />, // professional icon
     featured: true,
   },
   {
@@ -55,7 +55,7 @@ export const PROJECTS = [
     github: null,
     demo: null,
     color: '#bf00ff',
-    icon: '🤖',
+    icon: <Cpu size={24} />, // professional icon
     featured: true,
   },
   {
@@ -67,7 +67,7 @@ export const PROJECTS = [
     github: null,
     demo: null,
     color: '#ff0080',
-    icon: '🍽️',
+    icon: <Utensils size={24} />, // professional icon
     featured: false,
   },
 ]

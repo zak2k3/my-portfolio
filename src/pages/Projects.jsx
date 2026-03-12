@@ -5,6 +5,7 @@ import { Github, ExternalLink, Code2, Star, Zap } from 'lucide-react'
 import { PROJECTS } from '../utils/data'
 import { useAnalytics } from '../hooks'
 import { SectionTitle } from '../components/ui/index.jsx'
+import { BarChart, Cpu, Utensils } from 'lucide-react'
 
 const techColors = {
   Laravel: '#ff2d20',
@@ -81,7 +82,7 @@ function ProjectCard({ project, index }) {
         <div className="flex items-start justify-between mb-5">
           <div className="flex items-center gap-4">
             <motion.div
-              animate={hovered ? { rotate: [0, -10, 10, 0], scale: 1.1 } : {}}
+              animate={hovered ? {scale: 1.075 } : {scale: 1}}
               className="text-4xl"
             >
               {project.icon}
