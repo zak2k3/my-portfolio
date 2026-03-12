@@ -7,6 +7,8 @@ import { useAnalytics } from '../hooks'
 import { SectionTitle } from '../components/ui/index.jsx'
 import { BarChart, Cpu, Utensils } from 'lucide-react'
 
+const iconMap = { BarChart, Cpu, Utensils }
+
 const techColors = {
   Laravel: '#ff2d20',
   React: '#61dafb',
@@ -85,7 +87,12 @@ function ProjectCard({ project, index }) {
               animate={hovered ? {scale: 1.075 } : {scale: 1}}
               className="text-4xl"
             >
-              {project.icon}
+              <motion.div
+                animate={hovered ? { scale: 1.075 } : { scale: 1 }}
+                className="text-4xl"
+              >
+                {iconMap[project.icon] ? React.createElement(iconMap[project.icon], { size: 24 }) : null}
+              </motion.div>
             </motion.div>
             <div>
               <h3 className="font-display font-bold text-lg text-white group-hover:text-white transition-colors">
