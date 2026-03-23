@@ -15,7 +15,7 @@ const resources = {
       hero: {
         greeting: "Hi, I'm",
         name: 'Zakariya Baaziz',
-        roles: ['Full Stack Developer', 'React Specialist', 'Laravel Expert', 'Problem Solver', 'Trading Tools Builder'],
+        roles: ['Full Stack Developer', 'React', 'Laravel', 'Problem Solving', 'Trading Tools Building'],
         cta: 'View My Work',
         ctaSecondary: 'Download CV',
         location: 'Tangier, Morocco',
